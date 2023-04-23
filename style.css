@@ -211,6 +211,7 @@ footer {
 }
 
 .leftfooter {
+    box-sizing: border-box;
     color: #ffffff;
     width:20vw;
     display: flex;
