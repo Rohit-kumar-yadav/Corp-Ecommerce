@@ -221,8 +221,14 @@ footer {
 }
 
 .leftfooter>h3 {
-    margin: 1vw;
+    margin-top: 1vw;
+    font-size: 1.3vw;
 
+}
+
+.leftfooter>p{
+    font-size: 0.8vw;
+    margin: 0.5vw;
 }
 
 .leftfooter>img {
