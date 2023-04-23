@@ -65,6 +65,7 @@ nav {
 }
 
 .right>img {
+    width: 4vw;
    cursor: pointer;
     padding: 0.7vw;
 }
