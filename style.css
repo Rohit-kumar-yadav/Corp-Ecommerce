@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+.body {}
+
+nav {
+    height: 3vmax;
+    display: flex;
+    box-shadow: 0px 0px 10px rgba(70, 66, 66, 0.863);
+    position: sticky;
+    top: 0;
+    z-index: 1000000;
+    background-color: whitesmoke;
+}
+
+.left {
+
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.left>img{
+    /* height: 12vmax; */
+    
+}
+
+.mid {
+    width: 60%;
+    display: flex;
+    transition: all 0.5s;
+
+}
+
+.mid>a {
+
+    color: black;
+    font-size: 1.3vmax;
+    text-decoration: none;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mid>a:hover {
+    border-bottom: 2px solid crimson;
+    color: crimson;
+}
+
+.right {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.right>img {
+   cursor: pointer;
+    padding: 0.7vmax;
+}
+
+.container {
+    height: 90vh;
+    border: 2px solid black;
+    display: flex;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #dbd4e2 50%, #ffffff 100%);
+
+}
+
+.container>div {
+    /* border: 2px solid red; */
+    width: 100%;
+}
+
+.rightcontainer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#imgh {
+    filter: drop-shadow(0 0 10px black);
+    margin-right: 10vmax;
+    /* height: 38vmax; */
+}
+
+.leftcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.leftcontainer>h1 {
+    position: relative;
+    top: -3vmax;
+    margin-left: 3.5vmax;
+    font-size: 3.3vmax;
+    font-family: 'Gill Sans', sans-serif;
+}
+
+.leftcontainer>h2 {
+    position: relative;
+    top: -2.9vmax;
+    margin-left: 3.5vmax;
+    font-size: 2.2vmax;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.leftcontainer>p {
+    position: relative;
+    top: 0vmax;
+    margin-left: 4vmax;
+    font-size: 1vmax;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    transition: all 0.5s;
+    position: relative;
+    top: 1vmax;
+    margin-left: 4vmax;
+    padding: 0.4vmax 1vmax;
+    border-radius: 20px;
+    width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    filter: drop-shadow(0 0 10px rgb(49, 47, 47));
+    border: 2px solid crimson;
+}
+
+button:hover {
+    background-color: #8EC5FC;
+    color: black;
+
+}
+
+/* -------------------------------------------------- */
+
+#products {
+
+    margin: auto;
+    /* background-color: rgb(212, 126, 28); */
+}
+
+#products>h1 {
+    text-align: center;
+    font-size: 2vmax;
+    width: 25vmax;
+    margin: 5vmax auto;
+    border-bottom: 2px solid rgb(14, 14, 14);
+    padding: 1vmax;
+}
+
+.productcontainer {
+
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.product {
+    font-family: 'Franklin Gothic Medium', sans-serif;
+    display: flex;
+    margin: 1vmax;
+    transition: all 0.5s;
+    align-items: center;
+    flex-direction: column;
+    width: 20vmax;
+    height: 30vmax;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.product>img {
+    height: 25vmax;
+    margin-bottom: 0.6vmax;
+}
+
+.product:hover {
+    transform: translate(-10px);
+
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.795);
+    display: flex;
+}
+
+.leftfooter {
+    color: #ffffff;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vmax;
+    align-items: center;
+}
+
+.leftfooter>h3 {
+    margin: 1vmax;
+
+}
+
+.leftfooter>img {
+    cursor: pointer;
+    width: 10vmax;
+    margin: 0.6vmax;
+}
+
+.midfooter {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+
+}
+
+.midfooter>img{
+    margin-bottom: -3.5vmax;
+}
+
+.midfooter>p {
+    margin: 0.5vmax;
+}
+
+.rightfooter {
+    width: 20%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vmax;
+    align-items: center;
+}
+
+.rightfooter>h2 {
+    margin: 1vmax;
+    text-decoration: underline;
+}
+
+.rightfooter>a {
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 0.4vmax;
+}
