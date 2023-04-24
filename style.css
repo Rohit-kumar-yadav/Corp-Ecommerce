@@ -28,11 +28,6 @@ nav {
 
 }
 
-.left>img{
-    /* height: 12vmax; */
-    
-}
-
 .mid {
     width: 60vw;
     display: flex;
@@ -66,12 +61,12 @@ nav {
 
 .right>img {
     width: 4vw;
-   cursor: pointer;
+    cursor: pointer;
     padding: 0.7vw;
 }
 
 .container {
-    height: 90vh;
+    /* height: 100vw; */
     border: 0.2vw solid black;
     display: flex;
     background-color: #8EC5FC;
@@ -92,10 +87,11 @@ nav {
 }
 
 #imgh {
-  
+
     filter: drop-shadow(0 0 10px black);
-    margin-right: 10vw;
+    margin: 0 10vw;
     width: 100%;
+
     /* width: 60vw; */
     /* height: 38vmax; */
 }
@@ -173,7 +169,7 @@ button:hover {
 
 .productcontainer {
 
-    width:80vw;
+    width: 80vw;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -182,7 +178,7 @@ button:hover {
 }
 
 .product {
-    
+
     font-family: 'Franklin Gothic Medium', sans-serif;
     display: flex;
     margin: 1vw;
@@ -213,7 +209,7 @@ footer {
 .leftfooter {
     box-sizing: border-box;
     color: #ffffff;
-    width:20vw;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     margin-top: 3vw;
@@ -226,7 +222,7 @@ footer {
 
 }
 
-.leftfooter>p{
+.leftfooter>p {
     font-size: 0.8vw;
     margin: 0.5vw;
 }
@@ -247,7 +243,7 @@ footer {
 
 }
 
-.midfooter>img{
+.midfooter>img {
     margin-bottom: -3.5vw;
 }
 
