@@ -1,0 +1,31 @@
+@media only screen and (max-width: 600px) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+   .container{
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   
+   .leftcontainer{
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    width: 80%;
+    padding: 5vh 2vw;
+    align-items: center;
+   }
+   .leftcontainer>h1{
+    font-size: 6vw;
+   }
+   .leftcontainer>h2{
+    font-size: 4vw;
+   }
+   .leftcontainer>p{
+    font-size: 3vw;
+    padding:0 6vw;
+    
+   }
+   
+  }
