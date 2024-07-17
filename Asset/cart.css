@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 0.5em;
+}
+.Checkout-container{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+    /* border: 0.2vw solid black; */
+    display: flex;
+    padding: 5em;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #dbd4e2 50%, #ffffff 100%);
+}

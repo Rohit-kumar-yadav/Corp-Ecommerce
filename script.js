@@ -1,22 +1,34 @@
-// Initialize
+
+// const Cart = document.querySelector(".Cart-container");
 
 const ProductBtn = document.querySelectorAll('.p-btn');
-const Quantity = document.querySelector('.qty');
-let Price = document.querySelector('#price'); // Get a single element with id "price"
-const Product = document.querySelectorAll(".product");
-
 
 ProductBtn.forEach(Add);
 
 function Add(btn) {
-    btn.addEventListener('click', AddToCart);
+    btn.addEventListener('click', function () {
+        AddToCart(btn);
+    });
 }
 
-
-// Adding To Cart 
-function AddToCart() {
+function AddToCart(btn) {
+    const product = btn.closest('.product');
+    const price = product.querySelector('#price').innerText;
+    const Quantity = product.querySelector('.qty').value;
     console.log("Added to cart!");
-    console.log("Quantity: ", Quantity.value);
-    console.log("Price: ", Price.innerText);
+    console.log("Quantity: ", Quantity);
+    console.log("Price: ", price);
+
+    checkout(Quantity, price);
 }
 
+function checkout(Quantity, price) {
+    const cart = document.querySelector('.Cart-container');
+    const cartItem = document.createElement('div');
+    cartItem.classList.add('cart-item');
+    cartItem.innerHTML = `
+    <h4>Price: $${price}</h4>
+    <h4>Quantity: ${Quantity}</h4>
+    `;
+    cart.appendChild(cartItem);
+}

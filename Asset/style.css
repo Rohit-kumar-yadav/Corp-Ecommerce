@@ -57,12 +57,13 @@ nav {
     width: 20vw;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.right>img {
-    width: 4vw;
+.right img {
+    width: 2em;
     cursor: pointer;
-    padding: 0.7vw;
+    padding: 1em;
 }
 
 .container {
@@ -218,7 +219,7 @@ button:hover {
 }
 
 .add-products input{
-    width: 10%;
+    max-width: 3em;
     outline: #8EC5FC;
     padding: 0.1em;
     text-align: center;
@@ -301,3 +302,4 @@ footer {
     color: whitesmoke;
     margin: 0.4vw;
 }
+
