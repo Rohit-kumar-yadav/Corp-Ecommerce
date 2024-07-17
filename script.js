@@ -1,4 +1,6 @@
 
+import checkout from "./cart.js";
+
 // const Cart = document.querySelector(".Cart-container");
 
 const ProductBtn = document.querySelectorAll('.p-btn');
@@ -22,13 +24,5 @@ function AddToCart(btn) {
     checkout(Quantity, price);
 }
 
-function checkout(Quantity, price) {
-    const cart = document.querySelector('.Cart-container');
-    const cartItem = document.createElement('div');
-    cartItem.classList.add('cart-item');
-    cartItem.innerHTML = `
-    <h4>Price: $${price}</h4>
-    <h4>Quantity: ${Quantity}</h4>
-    `;
-    cart.appendChild(cartItem);
-}
+
+
