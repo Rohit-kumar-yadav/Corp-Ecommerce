@@ -128,10 +128,9 @@ nav {
     font-family: 'Courier New', Courier, monospace;
 }
 
-button {
+button{
     transition: all 0.5s;
     position: relative;
-    top: 1vw;
     font-size: 0.6vw;
     margin-left: 4vw;
     padding: 0.4vw 1vw;
@@ -143,6 +142,12 @@ button {
     font-weight: bold;
     filter: drop-shadow(0 0 1vw rgb(49, 47, 47));
     border: 0.2vw solid crimson;
+    
+}
+
+.btn{
+    
+    top: 1vw;
 }
 
 button:hover {
@@ -169,17 +174,19 @@ button:hover {
 }
 
 .productcontainer {
-
     width: 80vw;
     height: 100%;
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .product {
-
+    width: 30%;
+    /* border: 2px solid black; */
+    padding:1em;
     font-family: 'Franklin Gothic Medium', sans-serif;
     display: flex;
     margin: 1vw;
@@ -190,6 +197,8 @@ button:hover {
     height: 30vw;
     font-size: larger;
     cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
 
 .product>img {
@@ -201,6 +210,24 @@ button:hover {
     transform: translate(-1vw);
 
 }
+.add-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:1em;
+}
+
+.add-products input{
+    width: 10%;
+    outline: #8EC5FC;
+    padding: 0.1em;
+    text-align: center;
+}
+.p-btn{
+    width: 50%;
+}
+
+/* footer section */
 
 footer {
     background-color: rgba(0, 0, 0, 0.795);
