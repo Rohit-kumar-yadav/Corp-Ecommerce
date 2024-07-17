@@ -1,26 +1,22 @@
 // Initialize
 
-const ProductBtn = document.querySelectorAll('.p-btn')
-const Quantity = document.querySelector('.qty').value;
-let Price = document.querySelectorAll('#price');
+const ProductBtn = document.querySelectorAll('.p-btn');
+const Quantity = document.querySelector('.qty');
+let Price = document.querySelector('#price'); // Get a single element with id "price"
 const Product = document.querySelectorAll(".product");
 
 
 ProductBtn.forEach(Add);
-// Product.forEach();
 
-// function Products(p){
-//     console.log(p);
-// }
-
-function Add(btn){
-    btn.addEventListener('click',AddToCart);
+function Add(btn) {
+    btn.addEventListener('click', AddToCart);
 }
-   
-Price.forEach((p)=>{
-    console.log(Price[p].innerHTML);
-})
 
-function AddToCart(){
-    console.log(Quantity);
+
+// Adding To Cart 
+function AddToCart() {
+    console.log("Added to cart!");
+    console.log("Quantity: ", Quantity.value);
+    console.log("Price: ", Price.innerText);
 }
+
