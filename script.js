@@ -20,19 +20,6 @@ function Add(btn) {
 }
 
 
-active.addEventListener('click', () => {
-    if (CheckoutContainer.style.display == "none" || ContainerCart.style.display == "none" || checkout.style.display=="none") {
-        CheckoutContainer.style.display = "block";
-        ContainerCart.style.display = "block"
-        checkout.style.display="block"
-    }else{
-        CheckoutContainer.style.display="none";
-    }
-})
-
-
-
-
 
 let Subtotal = 0;
 
@@ -71,6 +58,9 @@ function Added(Quantity, price, Pname) {
 
 }
 
+
+
+// checkout
 checkout.addEventListener('click', () => {
     const cart = document.querySelector('tbody');
     
@@ -92,6 +82,17 @@ checkout.addEventListener('click', () => {
    
 })
 
+// open cart section
+
+active.addEventListener('click', () => {
+    if (CheckoutContainer.style.display == "none" ) {
+        CheckoutContainer.style.display = "block";
+        ContainerCart.style.display = "block"
+        checkout.style.display="block"
+    }else{
+        CheckoutContainer.style.display="none";
+    }
+})
 
 
 
